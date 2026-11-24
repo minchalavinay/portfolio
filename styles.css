@@ -881,6 +881,92 @@ code {
   padding: 36px;
 }
 
+/* Profile Photo Styling in About Section */
+.bio-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.profile-photo-container {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+}
+
+.photo-glow-ring {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--gradient-ai);
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.4), 0 0 10px rgba(139, 92, 246, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.profile-photo-container:hover .photo-glow-ring {
+  transform: scale(1.04);
+  box-shadow: 0 0 35px rgba(6, 182, 212, 0.6), 0 0 15px rgba(139, 92, 246, 0.5);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #0f172a;
+  display: block;
+}
+
+.photo-status {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 22px;
+  height: 22px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.bio-title-wrap h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.bio-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
 .bio-tag {
   display: inline-block;
   font-size: 0.78rem;
