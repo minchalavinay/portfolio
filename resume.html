@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Minchala Vinay Kumar - AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #0284c7;
+      --text: #1e293b;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 30px 16px;
+    }
+
+    .toolbar {
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .btn-back {
+      background: #ffffff;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-back:hover {
+      background: #f1f5f9;
+    }
+
+    .btn-print {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-print:hover {
+      background: #0369a1;
+    }
+
+    /* Resume Document Container */
+    .resume-paper {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 48px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border);
+    }
+
+    /* Header */
+    .resume-header {
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #0369a1;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .contact-line {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-line a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    /* Skills */
+    .skill-category {
+      font-size: 0.87rem;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .skill-category strong {
+      color: var(--primary);
+    }
+
+    /* Education & Experience Entries */
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .entry-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .entry-date {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .entry-sub {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 4px;
+    }
+
+    .bullet-list li {
+      font-size: 0.86rem;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.5;
+    }
+
+    .bullet-list li strong {
+      color: var(--primary);
+    }
+
+    .tech-used {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .toolbar {
+        display: none !important;
+      }
+
+      .resume-paper {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+
+      .name {
+        font-size: 1.9rem;
+      }
+
+      .section {
+        margin-bottom: 14px;
+      }
+
+      .bullet-list li {
+        font-size: 0.82rem;
+        margin-bottom: 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="toolbar">
+    <a href="index.html" class="btn btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <button onclick="window.print()" class="btn btn-print">
+      <i class="fa-solid fa-print"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <main class="resume-paper">
+    <!-- Header -->
+    <header class="resume-header">
+      <h1 class="name">MINCHALA VINAY KUMAR</h1>
+      <div class="contact-line">
+        <span>Chitvel, Andhra Pradesh</span> |
+        <span><a href="tel:8374577884">8374577884</a></span> |
+        <span><a href="mailto:minchalavinay579@gmail.com">minchalavinay579@gmail.com</a></span>
+      </div>
+      <div class="contact-line">
+        <span>LinkedIn: <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank"
+            rel="noopener">linkedin.com/in/minchalavinaykumar</a></span> |
+        <span>GitHub: <a href="https://github.com/minchalavinay" target="_blank"
+            rel="noopener">github.com/minchalavinay</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+      <p>
+        Passionate AI/ML Engineer and B.Tech graduate in Artificial Intelligence and Data Science with hands-on
+        experience designing, training, and evaluating deep learning and machine learning models. Proficient in building
+        CNN-based image classification systems, NLP text classification pipelines (Naive Bayes), and unsupervised
+        pattern recognition (Association Rule Mining). Skilled in Python, TensorFlow/Keras, Scikit-learn, feature
+        engineering, model optimization, and end-to-end ML lifecycle management. Seeking an AI Engineer, Machine
+        Learning Engineer, or Data Scientist role to develop intelligent solutions at scale.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+      <div class="skill-category">
+        <strong>Programming:</strong> Python (Advanced), Core Java, SQL, JavaScript
+      </div>
+      <div class="skill-category">
+        <strong>Machine Learning & AI:</strong> Supervised Learning (CNN, Naive Bayes, Classification), Unsupervised
+        Learning (Association Rule Mining, Clustering), Model Training, Hyperparameter Tuning, Cross-Validation,
+        Overfitting Control (Dropout, BatchNorm, Regularization)
+      </div>
+      <div class="skill-category">
+        <strong>Deep Learning:</strong> Convolutional Neural Networks (CNN), TensorFlow 2.x, Keras (Sequential &
+        Functional API), Conv2D, MaxPooling, Dense, Dropout, BatchNormalization, ImageDataGenerator
+      </div>
+      <div class="skill-category">
+        <strong>NLP:</strong> Text Preprocessing (Tokenization, Stemming, Stop-word Removal), TF-IDF, Bag of Words,
+        Naive Bayes Classifier, NLTK
+      </div>
+      <div class="skill-category">
+        <strong>Data Science Libraries:</strong> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, OpenCV, mlxtend
+      </div>
+      <div class="skill-category">
+        <strong>MLOps & Tools:</strong> Jupyter Notebook, Google Colab, VS Code, Git, GitHub, Model Serialization
+        (joblib/pickle), Experiment Tracking Concepts
+      </div>
+      <div class="skill-category">
+        <strong>Databases:</strong> MySQL, Data Pipelines, ETL Concepts, Feature Store Concepts
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">EDUCATION</h2>
+      <div class="entry-header">
+        <div class="entry-title">B.Tech – Artificial Intelligence and Data Science</div>
+        <div class="entry-date">June 2024</div>
+      </div>
+      <div class="entry-sub">Arjun College of Technology, Anna University, Coimbatore</div>
+      <p>
+        <strong>CGPA: 7.92 / 10.0</strong> | <strong>Relevant Coursework:</strong> Machine Learning, Deep Learning,
+        Natural Language Processing, Computer Vision, Data Mining, Statistics & Probability, Neural Networks, Python for
+        AI
+      </p>
+    </section>
+
+    <!-- Internship Experience -->
+    <section class="section">
+      <h2 class="section-title">INTERNSHIP EXPERIENCE</h2>
+      <div class="entry-header">
+        <div class="entry-title">AI & Full Stack Developer Intern</div>
+        <div class="entry-date">2023</div>
+      </div>
+      <div class="entry-sub">Palle Technologies</div>
+      <ul class="bullet-list">
+        <li>Developed AI-integrated web applications combining Python ML models with Java Spring Boot REST API back-end
+          and MySQL database.</li>
+        <li>Implemented data preprocessing and feature engineering scripts in Python for model training datasets.</li>
+        <li>Contributed to model deployment pipeline by serializing trained models and exposing inference endpoints via
+          REST APIs.</li>
+        <li>Collaborated in an agile team to deliver AI-powered application features, applying software engineering best
+          practices.</li>
+      </ul>
+    </section>
+
+    <!-- AI/ML Projects -->
+    <section class="section">
+      <h2 class="section-title">AI/ML PROJECTS</h2>
+
+      <!-- Project 1 -->
+      <div style="margin-bottom: 12px;">
+        <div class="entry-header">
+          <div class="entry-title">Sign Language Detection Using Deep Learning (CNN)</div>
+          <div class="entry-date">Feb 2024 – Apr 2024</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Designed a multi-class CNN image classifier using TensorFlow/Keras:
+            <code>Conv2D &rarr; MaxPooling2D &rarr; BatchNormalization &rarr; Dropout &rarr; Dense (Softmax)</code>.
+          </li>
+          <li>Built data augmentation pipeline using ImageDataGenerator (rotation, zoom, horizontal flip) to improve
+            model generalization on 10,000+ gesture images.</li>
+          <li>Performed hyperparameter tuning (learning rate, batch size, epochs, dropout rate); achieved <strong>94%
+              test accuracy</strong> with reduced overfitting.</li>
+          <li>Developed real-time inference module using OpenCV for live webcam gesture recognition and model
+            prediction.</li>
+        </ul>
+        <div class="tech-used">Technologies: Python, TensorFlow 2.x, Keras, NumPy, OpenCV, Matplotlib, CNN, Deep
+          Learning</div>
+      </div>
+
+      <!-- Project 2 -->
+      <div style="margin-bottom: 12px;">
+        <div class="entry-header">
+          <div class="entry-title">Email Spam Detection – NLP Classification Pipeline</div>
+          <div class="entry-date">Feb 2023 – Apr 2023</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Built end-to-end NLP ML pipeline: data ingestion &rarr; text cleaning &rarr; tokenization &rarr; stop-word
+            removal &rarr; stemming &rarr; TF-IDF vectorization &rarr; Naive Bayes classification.</li>
+          <li>Evaluated model performance with accuracy (<strong>96%+</strong>), precision, recall, F1-score, and
+            ROC-AUC; visualized results with confusion matrix and ROC curve.</li>
+          <li>Applied k-fold cross-validation to ensure robust model generalization; compared Multinomial vs Gaussian
+            Naive Bayes.</li>
+        </ul>
+        <div class="tech-used">Technologies: Python, Pandas, NumPy, Scikit-learn, NLTK, Matplotlib, Seaborn, NLP</div>
+      </div>
+
+      <!-- Project 3 -->
+      <div>
+        <div class="entry-header">
+          <div class="entry-title">Market Basket Analysis – Unsupervised Pattern Mining</div>
+          <div class="entry-date">Mar 2024 – Jun 2024</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Applied unsupervised learning via Apriori Association Rule Mining algorithm to discover high-confidence
+            purchasing patterns from retail transaction data.</li>
+          <li>Engineered features from raw transactional data; filtered association rules by support, confidence, and
+            lift metrics for business relevance.</li>
+          <li>Automated data pipeline for continuous pattern extraction; visualized association networks to present
+            findings to stakeholders.</li>
+        </ul>
+        <div class="tech-used">Technologies: Python, Pandas, NumPy, mlxtend (Apriori), Matplotlib, Seaborn, MySQL</div>
+      </div>
+    </section>
+
+    <!-- Key Competencies -->
+    <section class="section">
+      <h2 class="section-title">KEY COMPETENCIES</h2>
+      <p style="font-size: 0.86rem; line-height: 1.6;">
+        Machine Learning & Deep Learning • Convolutional Neural Networks (CNN) • Natural Language Processing (NLP) •
+        TensorFlow & Keras • Scikit-learn • Feature Engineering • Model Training & Evaluation • Computer Vision • Data
+        Preprocessing & EDA • Python for AI/ML • REST API for Model Deployment • Association Rule Mining • Statistical
+        Analysis • Research & Innovation • Team Leadership
+      </p>
+    </section>
+
+    <!-- Languages -->
+    <section class="section" style="margin-bottom: 0;">
+      <h2 class="section-title">LANGUAGES</h2>
+      <p style="font-size: 0.86rem;">
+        <strong>English</strong> (Proficient) | <strong>Telugu</strong> (Native) | <strong>Hindi</strong>
+        (Conversational)
+      </p>
+    </section>
+  </main>
+
+</body>
+
+</html>

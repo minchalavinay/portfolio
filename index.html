@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minchala Vinay Kumar | AI & ML Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Minchala Vinay Kumar - AI/ML Engineer, B.Tech in Artificial Intelligence & Data Science graduate. Skilled in Deep Learning (CNN), NLP pipelines, Computer Vision, and Full Stack ML deployment.">
+  <meta name="keywords"
+    content="Minchala Vinay Kumar, AI Engineer, Machine Learning Engineer, Deep Learning, NLP, Computer Vision, CNN, Python, TensorFlow, Fresher Portfolio">
+  <meta name="author" content="Minchala Vinay Kumar">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Minchala Vinay Kumar | AI & ML Engineer">
+  <meta property="og:description"
+    content="AI/ML Engineer specializing in Deep Learning (CNN), NLP pipelines, and intelligent system architectures. Explore live demos and projects.">
+
+  <!-- Favicon icon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Background Neural Network Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-code">&lt;</span>
+        <span class="brand-name">Vinay</span>
+        <span class="brand-dot">.ai</span>
+        <span class="brand-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#playground" class="nav-link special-link">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> AI Demos
+        </a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons & Theme Toggle -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light or dark theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="resume.html" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-file-pdf"></i> Resume
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm btn-hire">
+          <span>Hire Me</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <span class="brand-name">Minchala Vinay Kumar</span>
+      <button class="close-menu" id="close-menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about" class="mobile-link"><i class="fa-solid fa-user-astronaut"></i> About Me</a>
+      <a href="#skills" class="mobile-link"><i class="fa-solid fa-microchip"></i> Skills & Stack</a>
+      <a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+      <a href="#projects" class="mobile-link"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="#playground" class="mobile-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Interactive AI Demos</a>
+      <a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+      <a href="resume.html" target="_blank" class="mobile-link"><i class="fa-solid fa-file-arrow-down"></i> Printable
+        Resume</a>
+    </div>
+    <div class="mobile-socials">
+      <a href="https://github.com/minchalavinay" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank" rel="noopener"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:minchalavinay579@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:8374577884"><i class="fa-solid fa-phone"></i></a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-pulse"></span>
+            <span class="badge-text">2024 AI & Data Science Graduate • Actively Seeking Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Minchala Vinay Kumar</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="static-prefix">I build </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate <strong>AI/ML Engineer</strong> with hands-on expertise designing, training, and deploying
+            <strong>Deep Learning (CNN)</strong> models, <strong>NLP pipelines (Naive Bayes & TF-IDF)</strong>,
+            and scalable web endpoints. Ready to transform data into high-accuracy production intelligence.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i> Explore Projects
+            </a>
+            <a href="#playground" class="btn btn-secondary">
+              <i class="fa-solid fa-terminal"></i> Try Live AI Demos
+            </a>
+            <a href="resume.html" target="_blank" class="btn btn-outline" title="View printable resume">
+              <i class="fa-solid fa-file-invoice"></i> View Resume
+            </a>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank" rel="noopener" class="social-chip"
+              title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/minchalavinay" target="_blank" rel="noopener" class="social-chip"
+              title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:minchalavinay579@gmail.com" class="social-chip" title="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="tel:8374577884" class="social-chip" title="Phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 8374577884</span>
+            </a>
+            <span class="location-chip">
+              <i class="fa-solid fa-location-dot"></i> Chitvel, Andhra Pradesh
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual / Interactive ML Terminal -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-brands fa-python"></i> train_model.py — vinay_ai_env
+              </div>
+              <div class="terminal-badge">Active Session</div>
+            </div>
+
+            <div class="terminal-body" id="terminal-body">
+              <div class="term-line"><span class="t-prompt">$</span> python train_classifier.py --dataset sign_language
+              </div>
+              <div class="term-line t-info">[INFO] Initializing TensorFlow 2.x & Keras Sequential Pipeline</div>
+              <div class="term-line t-info">[INFO] Dataset: 10,000+ Gesture Samples (ImageDataGenerator loaded)</div>
+              <div class="term-line t-cyan">[ARCH] Conv2D(32) &rarr; MaxPool &rarr; Conv2D(64) &rarr; BatchNorm &rarr;
+                Dropout(0.25) &rarr; Dense(Softmax)</div>
+              <div class="term-line t-dim">Epoch 25/25: Loss: 0.082 | Train Acc: 97.4% | Val Acc: 94.2%</div>
+              <div class="term-line t-success"><i class="fa-solid fa-circle-check"></i> Model Evaluation Complete:
+                Accuracy = 94.0% (Zero Overfitting)</div>
+              <div class="term-line t-dim">Serializing weights to model_v1.pkl & launching OpenCV Inference...</div>
+              <div class="term-line t-accent"><span class="blink">&gt;&gt;&gt;</span> Ready for Live Recruiter
+                Inspection.</div>
+            </div>
+
+            <div class="terminal-footer">
+              <div class="metric-pill">
+                <span class="metric-val">94.0%</span>
+                <span class="metric-lbl">CNN Accuracy</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-val">96%+</span>
+                <span class="metric-lbl">NLP F1-Score</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-val">7.92</span>
+                <span class="metric-lbl">B.Tech CGPA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="metrics-strip">
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="metric-info">
+            <span class="metric-number" data-count="94">0</span><span class="metric-symbol">%</span>
+            <span class="metric-title">CNN Image Accuracy</span>
+            <span class="metric-sub">Sign Language Recognition</span>
+          </div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
+          <div class="metric-info">
+            <span class="metric-number" data-count="96">0</span><span class="metric-symbol">%+</span>
+            <span class="metric-title">NLP Classification Rate</span>
+            <span class="metric-sub">Spam Detection Pipeline</span>
+          </div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="metric-info">
+            <span class="metric-number" data-count="10000">0</span><span class="metric-symbol">+</span>
+            <span class="metric-title">Augmented Images</span>
+            <span class="metric-sub">Robust Generalization</span>
+          </div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="metric-info">
+            <span class="metric-number">7.92</span><span class="metric-symbol"> / 10</span>
+            <span class="metric-title">B.Tech CGPA</span>
+            <span class="metric-sub">Anna University (June 2024)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-user"></i> Professional Profile</span>
+          <h2 class="section-title">Bridging Machine Learning Research with <span class="gradient-text">Production
+              Engineering</span></h2>
+          <p class="section-subtitle">A fresher with rigorous academic grounding, hands-on deep learning workflows, and
+            practical full-stack deployment skills.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Bio Card -->
+          <div class="about-bio-card card">
+            <div class="bio-tag">B.Tech AI & Data Science Graduate</div>
+            <h3>About Me</h3>
+            <p>
+              I am a results-oriented <strong>AI/ML Engineer</strong> and June 2024 graduate in
+              <strong>Artificial Intelligence and Data Science</strong> from Arjun College of Technology, Anna
+              University.
+            </p>
+            <p>
+              During my academic and internship tenure, I've specialized in the complete machine learning lifecycle:
+              from rigorous Exploratory Data Analysis (EDA) and data augmentation to multi-layer CNN training,
+              NLP classification using Naive Bayes & TF-IDF, hyperparameter tuning, and serializing models for
+              real-time REST API consumption.
+            </p>
+            <p>
+              I bridge the gap between <strong>theoretical model mathematics</strong> and <strong>practical software
+                delivery</strong>, having developed applications combining Python ML backends with Java Spring Boot REST
+              APIs and MySQL databases.
+            </p>
+
+            <!-- Key Traits -->
+            <div class="traits-grid">
+              <div class="trait-box">
+                <i class="fa-solid fa-check-double text-accent"></i>
+                <div>
+                  <strong>Model Generalization</strong>
+                  <p>Expert in preventing overfitting via Dropout, BatchNorm, and Augmentation.</p>
+                </div>
+              </div>
+              <div class="trait-box">
+                <i class="fa-solid fa-server text-accent"></i>
+                <div>
+                  <strong>End-to-End Delivery</strong>
+                  <p>Experience serializing models (pickle/joblib) and exposing REST endpoints.</p>
+                </div>
+              </div>
+              <div class="trait-box">
+                <i class="fa-solid fa-users text-accent"></i>
+                <div>
+                  <strong>Agile Team Player</strong>
+                  <p>Internship experience working in cross-functional software teams.</p>
+                </div>
+              </div>
+              <div class="trait-box">
+                <i class="fa-solid fa-bolt text-accent"></i>
+                <div>
+                  <strong>Fast Learner & Adaptable</strong>
+                  <p>Proven track record of mastering new AI frameworks and delivering on schedule.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages Spoken -->
+            <div class="lang-strip">
+              <span class="lang-title"><i class="fa-solid fa-language"></i> Languages:</span>
+              <span class="lang-badge"><strong>English</strong> (Proficient)</span>
+              <span class="lang-badge"><strong>Telugu</strong> (Native)</span>
+              <span class="lang-badge"><strong>Hindi</strong> (Conversational)</span>
+            </div>
+          </div>
+
+          <!-- Right: Education & Core Competencies -->
+          <div class="about-right-column">
+            <!-- Education Card -->
+            <div class="education-card card">
+              <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="edu-details">
+                <div class="edu-meta">
+                  <span class="badge-accent">Graduated June 2024</span>
+                  <span class="badge-grade">CGPA: 7.92 / 10.0</span>
+                </div>
+                <h4>B.Tech in Artificial Intelligence & Data Science</h4>
+                <p class="institution">Arjun College of Technology • Anna University, Coimbatore</p>
+                <div class="coursework">
+                  <span class="cw-title">Relevant Academic Coursework:</span>
+                  <div class="cw-tags">
+                    <span>Machine Learning</span>
+                    <span>Deep Learning</span>
+                    <span>Natural Language Processing</span>
+                    <span>Computer Vision</span>
+                    <span>Data Mining</span>
+                    <span>Neural Networks</span>
+                    <span>Statistics & Probability</span>
+                    <span>Python for AI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Core Pillars -->
+            <div class="pillars-card card">
+              <h4>Core Engineering Pillars</h4>
+              <div class="pillar-item">
+                <div class="pillar-header">
+                  <span><i class="fa-solid fa-eye text-primary"></i> Computer Vision & Deep Learning</span>
+                  <span class="pillar-perc">90%</span>
+                </div>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width: 90%;"></div>
+                </div>
+                <p class="pillar-desc">Multi-class CNNs, ImageDataGenerator, OpenCV live webcam inference,
+                  Conv2D/Pooling architectures.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-header">
+                  <span><i class="fa-solid fa-comment-dots text-primary"></i> Natural Language Processing (NLP)</span>
+                  <span class="pillar-perc">92%</span>
+                </div>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width: 92%;"></div>
+                </div>
+                <p class="pillar-desc">TF-IDF vectorization, tokenization, stemming, Multinomial Naive Bayes, NLTK
+                  pipelines.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-header">
+                  <span><i class="fa-solid fa-chart-line text-primary"></i> ML Algorithms & Pattern Mining</span>
+                  <span class="pillar-perc">88%</span>
+                </div>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width: 88%;"></div>
+                </div>
+                <p class="pillar-desc">Supervised & Unsupervised Learning, Apriori Association Rules, Clustering,
+                  Cross-Validation.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-header">
+                  <span><i class="fa-solid fa-gears text-primary"></i> MLOps & Full Stack ML Integration</span>
+                  <span class="pillar-perc">85%</span>
+                </div>
+                <div class="prog-bar">
+                  <div class="prog-fill" style="width: 85%;"></div>
+                </div>
+                <p class="pillar-desc">Model serialization (joblib/pickle), Spring Boot REST APIs, MySQL storage,
+                  Git/GitHub workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-microchip"></i> Technical Repertoire</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Technology Stack</span></h2>
+          <p class="section-subtitle">Categorized breakdown of programming languages, machine learning frameworks, data
+            science libraries, and development tools.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="ai-ml">Machine Learning & Deep Learning</button>
+          <button class="filter-btn" data-filter="nlp-vision">NLP & Computer Vision</button>
+          <button class="filter-btn" data-filter="programming">Programming & Databases</button>
+          <button class="filter-btn" data-filter="tools">Tools & MLOps</button>
+        </div>
+
+        <!-- Skill Cards Grid -->
+        <div class="skills-grid" id="skills-grid">
+
+          <!-- Category 1: Programming & Databases -->
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon python-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="skill-meta">
+                <h4>Python (Advanced)</h4>
+                <span class="skill-tag">Primary Language</span>
+              </div>
+            </div>
+            <p class="skill-desc">OOP, scripting, NumPy vectorized computing, data manipulation, algorithm design, model
+              training scripts.</p>
+            <div class="skill-pills">
+              <span>OOP</span>
+              <span>Vectorization</span>
+              <span>Data Structures</span>
+              <span>Virtual Envs</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="ai-ml">
+            <div class="skill-top">
+              <div class="skill-icon tf-icon"><i class="fa-solid fa-fire"></i></div>
+              <div class="skill-meta">
+                <h4>TensorFlow & Keras 2.x</h4>
+                <span class="skill-tag">Deep Learning Framework</span>
+              </div>
+            </div>
+            <p class="skill-desc">Sequential & Functional APIs, Conv2D, MaxPooling, BatchNormalization, Dropout,
+              ImageDataGenerator, model checkpoints.</p>
+            <div class="skill-pills">
+              <span>Sequential API</span>
+              <span>Conv2D</span>
+              <span>BatchNorm</span>
+              <span>Dropout</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="ai-ml">
+            <div class="skill-top">
+              <div class="skill-icon sklearn-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="skill-meta">
+                <h4>Scikit-learn</h4>
+                <span class="skill-tag">Machine Learning</span>
+              </div>
+            </div>
+            <p class="skill-desc">Classification, regression, Naive Bayes (Multinomial & Gaussian), k-fold cross
+              validation, ROC-AUC evaluation, metrics.</p>
+            <div class="skill-pills">
+              <span>Naive Bayes</span>
+              <span>K-Fold CV</span>
+              <span>Confusion Matrix</span>
+              <span>ROC-AUC</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="nlp-vision">
+            <div class="skill-top">
+              <div class="skill-icon nlp-icon"><i class="fa-solid fa-comments"></i></div>
+              <div class="skill-meta">
+                <h4>NLP & NLTK</h4>
+                <span class="skill-tag">Text Processing Pipeline</span>
+              </div>
+            </div>
+            <p class="skill-desc">Text cleaning, regex tokenization, stop-word removal, Porter Stemming, Bag-of-Words,
+              TF-IDF vectorization, text classification.</p>
+            <div class="skill-pills">
+              <span>TF-IDF</span>
+              <span>Tokenization</span>
+              <span>Stemming</span>
+              <span>Stop-words</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="nlp-vision">
+            <div class="skill-top">
+              <div class="skill-icon cv-icon"><i class="fa-solid fa-camera"></i></div>
+              <div class="skill-meta">
+                <h4>OpenCV & Computer Vision</h4>
+                <span class="skill-tag">Real-Time Vision</span>
+              </div>
+            </div>
+            <p class="skill-desc">Webcam stream capture, frame preprocessing, color space conversion, contour tracking,
+              real-time bounding boxes and inference overlay.</p>
+            <div class="skill-pills">
+              <span>Webcam Streaming</span>
+              <span>Color Conversion</span>
+              <span>Real-Time Inference</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon sql-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="skill-meta">
+                <h4>SQL & MySQL</h4>
+                <span class="skill-tag">Relational Database</span>
+              </div>
+            </div>
+            <p class="skill-desc">Schema design, complex joins, data pipelines, transactional queries, ETL concepts,
+              feature store integration.</p>
+            <div class="skill-pills">
+              <span>Schema Design</span>
+              <span>Joins & Aggregations</span>
+              <span>ETL Concepts</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="programming">
+            <div class="skill-top">
+              <div class="skill-icon java-icon"><i class="fa-brands fa-java"></i></div>
+              <div class="skill-meta">
+                <h4>Core Java & Spring Boot</h4>
+                <span class="skill-tag">Backend Integration</span>
+              </div>
+            </div>
+            <p class="skill-desc">Spring Boot REST API development, endpoint exposure, backend integration with Python
+              ML models during internship.</p>
+            <div class="skill-pills">
+              <span>REST APIs</span>
+              <span>Spring Boot</span>
+              <span>Model Serving</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="ai-ml">
+            <div class="skill-top">
+              <div class="skill-icon ds-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <div class="skill-meta">
+                <h4>Pandas & NumPy</h4>
+                <span class="skill-tag">Data Manipulation</span>
+              </div>
+            </div>
+            <p class="skill-desc">Data wrangling, missing value imputation, multi-dimensional array operations, feature
+              scaling, high-speed filtering.</p>
+            <div class="skill-pills">
+              <span>Data Wrangling</span>
+              <span>Imputation</span>
+              <span>Matrix Math</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="ai-ml">
+            <div class="skill-top">
+              <div class="skill-icon viz-icon"><i class="fa-solid fa-chart-column"></i></div>
+              <div class="skill-meta">
+                <h4>Matplotlib & Seaborn</h4>
+                <span class="skill-tag">Data Visualization</span>
+              </div>
+            </div>
+            <p class="skill-desc">Exploratory data analysis plots, correlation heatmaps, loss curves, confusion
+              matrices, ROC curves, and distribution plots.</p>
+            <div class="skill-pills">
+              <span>Heatmaps</span>
+              <span>ROC Curves</span>
+              <span>Loss Plots</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="ai-ml">
+            <div class="skill-top">
+              <div class="skill-icon apriori-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="skill-meta">
+                <h4>mlxtend (Apriori Algorithm)</h4>
+                <span class="skill-tag">Unsupervised Mining</span>
+              </div>
+            </div>
+            <p class="skill-desc">Frequent itemset generation, association rule mining, calculating support, confidence,
+              and lift metrics for business analytics.</p>
+            <div class="skill-pills">
+              <span>Apriori</span>
+              <span>Support / Confidence</span>
+              <span>Lift Metric</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon git-icon"><i class="fa-brands fa-git-alt"></i></div>
+              <div class="skill-meta">
+                <h4>Git & GitHub</h4>
+                <span class="skill-tag">Version Control</span>
+              </div>
+            </div>
+            <p class="skill-desc">Branch management, pull requests, collaborative versioning, code reviews, open-source
+              repositories.</p>
+            <div class="skill-pills">
+              <span>Git Flow</span>
+              <span>Commits</span>
+              <span>Code Reviews</span>
+            </div>
+          </div>
+
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-top">
+              <div class="skill-icon mlops-icon"><i class="fa-solid fa-box-archive"></i></div>
+              <div class="skill-meta">
+                <h4>Model Serialization & Tools</h4>
+                <span class="skill-tag">MLOps Fundamentals</span>
+              </div>
+            </div>
+            <p class="skill-desc">Model persistence with joblib and pickle, Jupyter Notebooks, Google Colab GPU
+              runtimes, VS Code, experiment tracking.</p>
+            <div class="skill-pills">
+              <span>Joblib / Pickle</span>
+              <span>Google Colab</span>
+              <span>VS Code</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-briefcase"></i> Work History</span>
+          <h2 class="section-title">Industry <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">Real-world engineering experience integrating machine learning pipelines with
+            enterprise web architectures.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-role">AI & Full Stack Developer Intern</div>
+                  <div class="timeline-company">
+                    <span class="company-name">Palle Technologies</span>
+                    <span class="company-badge"><i class="fa-solid fa-building"></i> Technology Solutions</span>
+                  </div>
+                </div>
+                <div class="timeline-duration">
+                  <span class="duration-badge"><i class="fa-regular fa-calendar"></i> 2023 (Internship)</span>
+                </div>
+              </div>
+
+              <p class="exp-summary">
+                Contributed to the development and deployment of AI-integrated enterprise web applications,
+                connecting trained Python machine learning models with robust Java Spring Boot REST API services.
+              </p>
+
+              <div class="exp-highlights">
+                <h5>Key Deliverables & Responsibilities:</h5>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span><strong>End-to-End AI Web Integration:</strong> Developed full-stack architecture connecting
+                      Python ML inference routines with Java Spring Boot REST API backend and MySQL database
+                      storage.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span><strong>Data Preprocessing & Feature Engineering:</strong> Authored custom Python automation
+                      scripts for data cleaning, transformation, and normalization across raw training datasets.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span><strong>Model Serialization & Serving:</strong> Contributed directly to the model deployment
+                      pipeline by serializing trained ML models (joblib/pickle) and exposing high-performance REST
+                      inference endpoints.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check text-accent"></i>
+                    <span><strong>Agile Collaboration:</strong> Actively participated in sprint planning, code reviews,
+                      and scrum ceremonies to deliver AI features on tight deadlines following software best
+                      practices.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Architecture Flow Diagram Card -->
+              <div class="arch-flow">
+                <span class="arch-title"><i class="fa-solid fa-diagram-project"></i> Project System Architecture:</span>
+                <div class="flow-steps">
+                  <div class="flow-step">
+                    <span class="flow-badge">Dataset</span>
+                    <span class="flow-label">MySQL DB</span>
+                  </div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-step">
+                    <span class="flow-badge">ETL & Training</span>
+                    <span class="flow-label">Python & Scikit</span>
+                  </div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-step">
+                    <span class="flow-badge">Serialization</span>
+                    <span class="flow-label">Joblib / Pickle</span>
+                  </div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-step">
+                    <span class="flow-badge">Inference API</span>
+                    <span class="flow-label">Java Spring Boot</span>
+                  </div>
+                  <div class="flow-arrow">&rarr;</div>
+                  <div class="flow-step">
+                    <span class="flow-badge">Client UI</span>
+                    <span class="flow-label">Web Application</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Java Spring Boot</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Model Serialization</span>
+                <span class="tech-tag">Feature Engineering</span>
+                <span class="tech-tag">Agile / Scrum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLAGSHIP PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-code"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Flagship <span class="gradient-text">AI & ML Projects</span></h2>
+          <p class="section-subtitle">Deep dive into custom-architected Deep Learning, Natural Language Processing, and
+            Unsupervised Pattern Mining solutions.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Sign Language Detection -->
+          <div class="project-card card">
+            <div class="project-banner project-banner-cv">
+              <div class="project-tag-pill"><i class="fa-solid fa-camera"></i> Computer Vision • Deep Learning</div>
+              <div class="project-metric-badge">94.0% Test Accuracy</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-period"><i class="fa-regular fa-calendar"></i> Feb 2024 – Apr 2024</div>
+              <h3 class="project-title">Sign Language Detection Using Deep Learning (CNN)</h3>
+
+              <p class="project-desc">
+                Designed and trained a robust multi-class Convolutional Neural Network (CNN) to recognize hand gestures
+                in real-time, achieving 94% test accuracy with zero overfitting on a diverse 10,000+ image dataset.
+              </p>
+
+              <!-- Architecture Flow -->
+              <div class="project-architecture">
+                <span class="arch-tag">Architecture Pipeline:</span>
+                <code>Conv2D &rarr; MaxPool &rarr; BatchNorm &rarr; Dropout &rarr; Dense(Softmax)</code>
+              </div>
+
+              <div class="project-highlights-list">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Data Augmentation:</strong> Built automated pipeline using
+                    <code>ImageDataGenerator</code> (rotation, zoom, horizontal flip) for 10,000+ gesture images.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Hyperparameter Tuning:</strong> Optimized learning rate, batch size, epoch steps, and
+                    dropout rate to achieve 94% test accuracy.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Real-Time Webcam Inference:</strong> Developed live video frame capture with OpenCV for
+                    immediate visual feedback and bounding classification.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>TensorFlow 2.x</span>
+                <span>Keras</span>
+                <span>OpenCV</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+                <span>CNN</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="modal-sign-language">
+                  <i class="fa-solid fa-circle-info"></i> View Case Study
+                </button>
+                <a href="#playground" class="btn btn-secondary btn-sm" onclick="switchDemoTab('cnn-tab')">
+                  <i class="fa-solid fa-play"></i> Inspect Layers
+                </a>
+                <a href="https://github.com/minchalavinay" target="_blank" rel="noopener"
+                  class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Email Spam Detection -->
+          <div class="project-card card">
+            <div class="project-banner project-banner-nlp">
+              <div class="project-tag-pill"><i class="fa-solid fa-comments"></i> NLP Pipeline • Machine Learning</div>
+              <div class="project-metric-badge">96%+ Accuracy & F1</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-period"><i class="fa-regular fa-calendar"></i> Feb 2023 – Apr 2023</div>
+              <h3 class="project-title">Email Spam Detection – NLP Classification Pipeline</h3>
+
+              <p class="project-desc">
+                Architected an end-to-end natural language processing pipeline that ingests raw email text, applies
+                systematic text preprocessing, extracts TF-IDF n-gram vectors, and classifies messages via Naive Bayes.
+              </p>
+
+              <!-- Architecture Flow -->
+              <div class="project-architecture">
+                <span class="arch-tag">NLP Pipeline:</span>
+                <code>Clean &rarr; Tokenize &rarr; Stopwords &rarr; Stem &rarr; TF-IDF &rarr; Naive Bayes</code>
+              </div>
+
+              <div class="project-highlights-list">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Comprehensive Preprocessing:</strong> Tokenization, regex noise removal, stop-word
+                    filtering, Porter stemming, and TF-IDF matrix generation.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Model Benchmarking:</strong> Rigorously compared Multinomial vs. Gaussian Naive Bayes
+                    using k-fold cross-validation.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Exhaustive Evaluation:</strong> Achieved 96%+ accuracy, high precision, recall,
+                    F1-score, visualized through Confusion Matrix & ROC curves.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>NLTK</span>
+                <span>Scikit-learn</span>
+                <span>TF-IDF</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Seaborn</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="modal-spam-detection">
+                  <i class="fa-solid fa-circle-info"></i> View Case Study
+                </button>
+                <a href="#playground" class="btn btn-secondary btn-sm" onclick="switchDemoTab('nlp-tab')">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i> Test Classifier Live
+                </a>
+                <a href="https://github.com/minchalavinay" target="_blank" rel="noopener"
+                  class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Market Basket Analysis -->
+          <div class="project-card card">
+            <div class="project-banner project-banner-data">
+              <div class="project-tag-pill"><i class="fa-solid fa-cart-shopping"></i> Unsupervised Pattern Mining •
+                Analytics</div>
+              <div class="project-metric-badge">Apriori Association</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-period"><i class="fa-regular fa-calendar"></i> Mar 2024 – Jun 2024</div>
+              <h3 class="project-title">Market Basket Analysis – Unsupervised Pattern Mining</h3>
+
+              <p class="project-desc">
+                Discovered high-confidence customer purchasing patterns and cross-selling correlations from complex
+                retail transaction records using Apriori Association Rule Mining algorithm.
+              </p>
+
+              <!-- Architecture Flow -->
+              <div class="project-architecture">
+                <span class="arch-tag">Mining Pipeline:</span>
+                <code>Raw Data &rarr; MySQL ETL &rarr; One-Hot Encoding &rarr; Apriori &rarr; Association Rules</code>
+              </div>
+
+              <div class="project-highlights-list">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Apriori Algorithm Implementation:</strong> Extracted frequent itemsets and calculated
+                    Support, Confidence, and Lift metrics to uncover actionable consumer patterns.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Automated Data Pipeline:</strong> Engineered data extraction from MySQL, automated
+                    preprocessing, and generated tabular correlation matrices.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check text-accent"></i>
+                  <span><strong>Network Visualizations:</strong> Built interactive network graphs showcasing item
+                    co-occurrences to deliver clear business insights.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>mlxtend (Apriori)</span>
+                <span>MySQL</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-modal="modal-basket-analysis">
+                  <i class="fa-solid fa-circle-info"></i> View Case Study
+                </button>
+                <a href="#playground" class="btn btn-secondary btn-sm" onclick="switchDemoTab('basket-tab')">
+                  <i class="fa-solid fa-sliders"></i> Rule Explorer
+                </a>
+                <a href="https://github.com/minchalavinay" target="_blank" rel="noopener"
+                  class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE AI PLAYGROUND / DEMOS SECTION -->
+    <section class="section playground-section" id="playground">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Recruiter Interactive Lab</span>
+          <h2 class="section-title">Test My <span class="gradient-text">AI Algorithms Live</span></h2>
+          <p class="section-subtitle">Experience live browser-based demonstrations of my NLP Spam Classifier, CNN Layer
+            Architecture Inspector, and Apriori Association Engine.</p>
+        </div>
+
+        <div class="playground-box card">
+          <!-- Demo Tabs -->
+          <div class="demo-tabs">
+            <button class="demo-tab active" id="btn-nlp-tab" onclick="switchDemoTab('nlp-tab')">
+              <i class="fa-solid fa-envelope-open-text"></i> Live NLP Spam Classifier
+            </button>
+            <button class="demo-tab" id="btn-cnn-tab" onclick="switchDemoTab('cnn-tab')">
+              <i class="fa-solid fa-layer-group"></i> CNN Architecture Explorer
+            </button>
+            <button class="demo-tab" id="btn-basket-tab" onclick="switchDemoTab('basket-tab')">
+              <i class="fa-solid fa-basket-shopping"></i> Apriori Rule Simulator
+            </button>
+          </div>
+
+          <!-- TAB 1: LIVE NLP SPAM CLASSIFIER -->
+          <div class="demo-panel active" id="nlp-tab">
+            <div class="demo-intro">
+              <h4>Interactive NLP Spam Classifier (TF-IDF & Naive Bayes Heuristic)</h4>
+              <p>Type any email body below or click one of the quick test presets to run real-time tokenization,
+                stop-word removal, and spam probability scoring right in your browser!</p>
+            </div>
+
+            <!-- Quick Presets -->
+            <div class="preset-group">
+              <span class="preset-label">Quick Recruiter Presets:</span>
+              <button class="preset-btn" onclick="loadSpamPreset('spam1')">🚨 Lottery / Cash Scam</button>
+              <button class="preset-btn" onclick="loadSpamPreset('spam2')">⚠️ Urgent Account Verify</button>
+              <button class="preset-btn" onclick="loadSpamPreset('ham1')">💼 Work Standup Meeting</button>
+              <button class="preset-btn" onclick="loadSpamPreset('ham2')">🎓 Technical Interview Invite</button>
+            </div>
+
+            <div class="nlp-interface">
+              <div class="nlp-input-side">
+                <label for="spam-input-text" class="input-label">Email Content to Evaluate:</label>
+                <textarea id="spam-input-text" rows="5"
+                  placeholder="Enter or paste email text to evaluate..."></textarea>
+
+                <div class="nlp-controls">
+                  <button id="classify-btn" class="btn btn-primary">
+                    <i class="fa-solid fa-play"></i> Run NLP Inference
+                  </button>
+                  <button id="clear-nlp-btn" class="btn btn-outline btn-sm">Clear Text</button>
+                </div>
+              </div>
+
+              <div class="nlp-output-side" id="nlp-results">
+                <div class="nlp-status-card">
+                  <div class="status-top">
+                    <span class="status-tag">Classification Result:</span>
+                    <span class="latency-badge"><i class="fa-solid fa-bolt"></i> <span id="inference-time">1.8</span>
+                      ms</span>
+                  </div>
+
+                  <div class="prediction-display" id="prediction-badge">
+                    <span class="pred-icon"><i class="fa-solid fa-circle-question"></i></span>
+                    <span class="pred-text">Ready to Classify</span>
+                  </div>
+
+                  <!-- Confidence Meter -->
+                  <div class="confidence-box">
+                    <div class="conf-labels">
+                      <span>Ham (Legitimate)</span>
+                      <span id="conf-val">0%</span>
+                      <span>Spam (Fraudulent)</span>
+                    </div>
+                    <div class="meter-bar">
+                      <div class="meter-fill" id="meter-fill" style="width: 50%;"></div>
+                    </div>
+                  </div>
+
+                  <!-- Token Analysis -->
+                  <div class="token-analysis">
+                    <h6>Detected Keywords & Trigger Weights:</h6>
+                    <div class="tokens-container" id="tokens-container">
+                      <span class="token-pill neutral">Awaiting input...</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: CNN ARCHITECTURE EXPLORER -->
+          <div class="demo-panel" id="cnn-tab">
+            <div class="demo-intro">
+              <h4>Sign Language Multi-Class CNN Visualizer</h4>
+              <p>Click on any layer of the network pipeline below to inspect its mathematical purpose, parameter count,
+                and role in preventing overfitting.</p>
+            </div>
+
+            <div class="cnn-pipeline">
+              <div class="cnn-node active" onclick="inspectCnnLayer('input')">
+                <div class="cnn-step-num">Step 1</div>
+                <div class="cnn-node-title">Input Image</div>
+                <div class="cnn-node-shape">64 × 64 × 3 RGB</div>
+              </div>
+
+              <div class="cnn-arrow">&rarr;</div>
+
+              <div class="cnn-node" onclick="inspectCnnLayer('conv1')">
+                <div class="cnn-step-num">Step 2</div>
+                <div class="cnn-node-title">Conv2D (32)</div>
+                <div class="cnn-node-shape">Kernel 3×3, ReLU</div>
+              </div>
+
+              <div class="cnn-arrow">&rarr;</div>
+
+              <div class="cnn-node" onclick="inspectCnnLayer('pool1')">
+                <div class="cnn-step-num">Step 3</div>
+                <div class="cnn-node-title">MaxPooling2D</div>
+                <div class="cnn-node-shape">Pool 2×2 (Downsample)</div>
+              </div>
+
+              <div class="cnn-arrow">&rarr;</div>
+
+              <div class="cnn-node" onclick="inspectCnnLayer('bn')">
+                <div class="cnn-step-num">Step 4</div>
+                <div class="cnn-node-title">BatchNorm</div>
+                <div class="cnn-node-shape">Stabilize Gradient</div>
+              </div>
+
+              <div class="cnn-arrow">&rarr;</div>
+
+              <div class="cnn-node" onclick="inspectCnnLayer('drop')">
+                <div class="cnn-step-num">Step 5</div>
+                <div class="cnn-node-title">Dropout (0.25)</div>
+                <div class="cnn-node-shape">Prevent Overfit</div>
+              </div>
+
+              <div class="cnn-arrow">&rarr;</div>
+
+              <div class="cnn-node" onclick="inspectCnnLayer('dense')">
+                <div class="cnn-step-num">Step 6</div>
+                <div class="cnn-node-title">Dense (Softmax)</div>
+                <div class="cnn-node-shape">10 Gesture Classes</div>
+              </div>
+            </div>
+
+            <!-- Layer Details Box -->
+            <div class="layer-details-box card" id="layer-details">
+              <div class="layer-details-header">
+                <h5 id="layer-title"><i class="fa-solid fa-microchip text-accent"></i> Layer: Input Tensor [64x64x3]
+                </h5>
+                <span class="badge-accent" id="layer-badge">Raw Input</span>
+              </div>
+              <p id="layer-desc">
+                The pipeline ingests gesture images scaled to 64x64 pixels with 3 color channels. Images pass through an
+                ImageDataGenerator that applies rotational variance, zooming (+/- 15%), and horizontal flips to build
+                resilience against varied camera angles.
+              </p>
+              <div class="layer-stats-grid" id="layer-stats">
+                <div class="layer-stat"><strong>Tensor Shape:</strong> (Batch, 64, 64, 3)</div>
+                <div class="layer-stat"><strong>Parameters:</strong> 0 (Input)</div>
+                <div class="layer-stat"><strong>Overfitting Defense:</strong> Data Augmentation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: APRIORI RULE SIMULATOR -->
+          <div class="demo-panel" id="basket-tab">
+            <div class="demo-intro">
+              <h4>Apriori Association Rule Mining Simulator</h4>
+              <p>Adjust the Minimum Confidence and Minimum Lift sliders below to filter the strongest retail purchase
+                associations discovered from the dataset.</p>
+            </div>
+
+            <div class="apriori-controls-grid">
+              <div class="slider-control">
+                <div class="slider-header">
+                  <label for="conf-slider">Min Confidence: <span id="conf-slider-val"
+                      class="text-accent font-bold">0.60</span></label>
+                  <span class="hint-text">Likelihood of buying Y when X is bought</span>
+                </div>
+                <input type="range" id="conf-slider" min="0.30" max="0.90" step="0.05" value="0.60"
+                  oninput="updateAprioriRules()">
+              </div>
+
+              <div class="slider-control">
+                <div class="slider-header">
+                  <label for="lift-slider">Min Lift: <span id="lift-slider-val"
+                      class="text-accent font-bold">1.50</span></label>
+                  <span class="hint-text">Strength of rule over random chance</span>
+                </div>
+                <input type="range" id="lift-slider" min="1.0" max="3.5" step="0.1" value="1.50"
+                  oninput="updateAprioriRules()">
+              </div>
+            </div>
+
+            <!-- Rules Table -->
+            <div class="rules-table-container">
+              <table class="rules-table">
+                <thead>
+                  <tr>
+                    <th>Antecedent (Purchased Item)</th>
+                    <th>Consequent (Predicted Item)</th>
+                    <th>Support</th>
+                    <th>Confidence</th>
+                    <th>Lift Ratio</th>
+                    <th>Business Recommendation</th>
+                  </tr>
+                </thead>
+                <tbody id="rules-tbody">
+                  <!-- Dynamically populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RECRUITER FAQ / QUICK DECISION ACCORDION -->
+    <section class="section faq-section" id="faq">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-circle-question"></i> Recruiter FAQ</span>
+          <h2 class="section-title">Quick Information for <span class="gradient-text">Hiring Managers</span></h2>
+          <p class="section-subtitle">Key answers regarding availability, relocation, technical readiness, and role
+            preferences.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-card card">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What roles is Minchala Vinay Kumar targeting?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>I am actively targeting entry-level / fresher roles as an <strong>AI Engineer</strong>, <strong>Machine
+                  Learning Engineer</strong>, <strong>Data Scientist</strong>, or <strong>Computer Vision / NLP
+                  Developer</strong>.</p>
+            </div>
+          </div>
+
+          <div class="faq-card card">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What is your notice period and current availability?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>I have graduated in <strong>June 2024</strong> with my B.Tech degree and am <strong>available to join
+                  immediately</strong> (0 days notice period).</p>
+            </div>
+          </div>
+
+          <div class="faq-card card">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Are you willing to relocate or work in hybrid/remote settings?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Yes, 100%.</strong> I am open and ready to relocate to major IT hubs across India (Bengaluru,
+                Hyderabad, Chennai, Pune, Mumbai, Delhi-NCR) or work in hybrid/remote configurations.</p>
+            </div>
+          </div>
+
+          <div class="faq-card card">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What makes Vinay stand out from other freshers?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Beyond theoretical concepts, I possess <strong>actual production-level integration experience</strong>
+                from my internship at Palle Technologies—connecting trained models with Spring Boot REST endpoints and
+                relational databases. I have delivered working models with 94% CNN accuracy and 96%+ NLP accuracy with
+                rigorous validation and zero overfitting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-paper-plane"></i> Get in Touch</span>
+          <h2 class="section-title">Let's Discuss <span class="gradient-text">Opportunities</span></h2>
+          <p class="section-subtitle">Whether you have an open position, an internship, or want to discuss an AI
+            project, my inbox is always open!</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Cards Info -->
+          <div class="contact-info">
+            <div class="contact-card card">
+              <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <span class="contact-lbl">Email Address</span>
+                <a href="mailto:minchalavinay579@gmail.com" class="contact-val">minchalavinay579@gmail.com</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('minchalavinay579@gmail.com', this)" title="Copy email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card card">
+              <div class="contact-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-text">
+                <span class="contact-lbl">Phone / WhatsApp</span>
+                <a href="tel:8374577884" class="contact-val">+91 8374577884</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('8374577884', this)" title="Copy phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card card">
+              <div class="contact-icon linkedin-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="contact-text">
+                <span class="contact-lbl">LinkedIn Profile</span>
+                <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank" rel="noopener"
+                  class="contact-val">linkedin.com/in/minchalavinaykumar</a>
+              </div>
+              <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank" rel="noopener" class="visit-btn"
+                title="Open LinkedIn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-card card">
+              <div class="contact-icon github-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-text">
+                <span class="contact-lbl">GitHub Repositories</span>
+                <a href="https://github.com/minchalavinay" target="_blank" rel="noopener"
+                  class="contact-val">github.com/minchalavinay</a>
+              </div>
+              <a href="https://github.com/minchalavinay" target="_blank" rel="noopener" class="visit-btn"
+                title="Open GitHub">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-card card">
+              <div class="contact-icon loc-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <span class="contact-lbl">Current Location</span>
+                <span class="contact-val">Chitvel, Andhra Pradesh, India</span>
+              </div>
+              <span class="badge-relocate">Open to Relocate</span>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card card">
+            <h3>Send a Message Directly</h3>
+            <p>Fill out the form below to reach out directly to my inbox.</p>
+
+            <form id="contact-form" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="sender-name">Your Full Name *</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="sender-name" required placeholder="e.g. John Doe / Tech Recruiter">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email">Your Work Email *</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="sender-email" required placeholder="e.g. recruiter@company.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject">Subject *</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <input type="text" id="sender-subject" required
+                    placeholder="e.g. Interview Opportunity - AI/ML Engineer Role">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Message Details *</label>
+                <textarea id="sender-message" rows="4" required
+                  placeholder="Share role details, interview dates, or inquiries..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Send Email to Vinay
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODALS FOR PROJECT CASE STUDIES -->
+
+  <!-- Modal 1: Sign Language Detection -->
+  <div class="modal" id="modal-sign-language">
+    <div class="modal-backdrop" onclick="closeAllModals()"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag">Deep Learning & Computer Vision</span>
+          <h3>Sign Language Detection Using Deep Learning (CNN)</h3>
+        </div>
+        <button class="modal-close" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-bullseye text-accent"></i> Project Problem & Objective</h4>
+          <p>
+            Bridging communication gaps for speech and hearing-impaired individuals requires rapid, accurate hand
+            gesture translation.
+            The goal was to design an end-to-end deep learning image classifier capable of recognizing diverse gestures
+            in real-time under fluctuating lighting and angles.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-layer-group text-accent"></i> Model Architecture & Engineering</h4>
+          <p>The network is structured using TensorFlow/Keras with strategic regularization:</p>
+          <ul>
+            <li><strong>Conv2D Layer 1:</strong> 32 filters, 3×3 kernel size with ReLU activation for primitive edge and
+              corner extraction.</li>
+            <li><strong>MaxPooling2D:</strong> 2×2 pool size to downsample spatial dimensions while retaining invariant
+              features.</li>
+            <li><strong>BatchNormalization:</strong> Applied after convolution blocks to stabilize activations and
+              accelerate convergence.</li>
+            <li><strong>Dropout (0.25 & 0.5):</strong> Strategically dropped connections during training to prevent
+              co-adaptation and eliminate overfitting.</li>
+            <li><strong>Dense Softmax Output:</strong> Output layer with Softmax activation delivering multi-class
+              probability distributions across hand signs.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-database text-accent"></i> Data Pipeline & Augmentation</h4>
+          <p>
+            Trained on <strong>10,000+ hand gesture images</strong>. Applied <code>ImageDataGenerator</code> techniques
+            including:
+            rotations (up to 20°), zoom range (0.15), width/height shifts, and horizontal flips. This synthetic
+            variation enabled the model to maintain 94% accuracy even on unseen camera angles.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-chart-line text-accent"></i> Results & Real-Time Webcam Deployment</h4>
+          <p>
+            Achieved <strong>94% test accuracy</strong> on holdout validation. An OpenCV script was built to capture 30
+            FPS video from webcams, crop bounding boxes, preprocess frames to 64×64 RGB, and render real-time
+            predictions with &lt;15ms latency.
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/minchalavinay" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-outline btn-sm" onclick="closeAllModals()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Spam Detection -->
+  <div class="modal" id="modal-spam-detection">
+    <div class="modal-backdrop" onclick="closeAllModals()"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag">NLP & Machine Learning</span>
+          <h3>Email Spam Detection – NLP Classification Pipeline</h3>
+        </div>
+        <button class="modal-close" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-bullseye text-accent"></i> Project Problem & Objective</h4>
+          <p>
+            Unsolicited spam emails cause security threats, phishing risks, and productivity loss. The project developed
+            a fast, lightweight NLP classification pipeline capable of sorting legitimate emails from malicious spam
+            with high precision and minimal false positives.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-filter text-accent"></i> NLP Preprocessing Pipeline</h4>
+          <p>Authored an automated text cleaning pipeline using NLTK:</p>
+          <ul>
+            <li><strong>Text Ingestion & Regex Cleaning:</strong> Stripped HTML tags, URLs, special characters, numbers,
+              and excess whitespace.</li>
+            <li><strong>Tokenization:</strong> Segmented sentences into individual word tokens.</li>
+            <li><strong>Stop-word Removal:</strong> Filtered high-frequency uninformative words (e.g. "the", "is", "at")
+              via NLTK corpus.</li>
+            <li><strong>Stemming:</strong> Applied PorterStemmer to collapse words to their base root stems (e.g.
+              "winning" &rarr; "win").</li>
+            <li><strong>TF-IDF Vectorization:</strong> Calculated Term Frequency-Inverse Document Frequency scores to
+              weight unique discriminative spam tokens.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-chart-pie text-accent"></i> Model Comparison & Results</h4>
+          <p>
+            Benchmarked <strong>Multinomial Naive Bayes</strong> against Gaussian Naive Bayes and Logistic Regression
+            using 5-fold cross validation.
+            Multinomial Naive Bayes yielded <strong>96%+ test accuracy</strong>, 97% precision (crucial for avoiding
+            false spam flags), and an ROC-AUC score of 0.98. Visualized results using Confusion Matrix and ROC curves in
+            Seaborn.
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/minchalavinay" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-outline btn-sm" onclick="closeAllModals()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Market Basket Analysis -->
+  <div class="modal" id="modal-basket-analysis">
+    <div class="modal-backdrop" onclick="closeAllModals()"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag">Unsupervised Learning & Data Mining</span>
+          <h3>Market Basket Analysis – Apriori Pattern Mining</h3>
+        </div>
+        <button class="modal-close" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-bullseye text-accent"></i> Project Problem & Objective</h4>
+          <p>
+            Retailers need data-driven insights for product placement, bundle promotions, and inventory cross-docking.
+            This project analyzed high-volume point-of-sale transactional datasets to reveal hidden co-purchasing
+            affinities.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-gears text-accent"></i> Data Pipeline & Algorithm Implementation</h4>
+          <p>
+            Connected to a MySQL transactional store. Extracted customer receipts, aggregated items per transaction, and
+            converted data into a binary one-hot encoded matrix.
+            Leveraged the <strong>Apriori algorithm</strong> via Python's <code>mlxtend</code> library to generate
+            frequent itemsets based on minimum support thresholds.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-magnifying-glass-chart text-accent"></i> Metrics & Business Rules</h4>
+          <p>
+            Computed key association metrics:
+          </p>
+          <ul>
+            <li><strong>Support:</strong> Frequency of itemset occurrence across total basket orders.</li>
+            <li><strong>Confidence:</strong> Probability that item Y is bought given that item X is in the basket.</li>
+            <li><strong>Lift Ratio:</strong> Ratio of observed joint support to expected support if items were
+              independent. Rules with Lift &gt; 1.5 were prioritized for actionable marketing strategies.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/minchalavinay" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-outline btn-sm" onclick="closeAllModals()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-brand">
+          <span class="brand-name">Minchala Vinay Kumar</span>
+          <span class="brand-dot">.ai</span>
+        </a>
+        <p>B.Tech Artificial Intelligence & Data Science • Anna University (2024)</p>
+        <p class="footer-copy">&copy; 2024 Minchala Vinay Kumar. Built for excellence in AI Engineering.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#playground">AI Demos</a>
+        <a href="resume.html" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/minchalavinay" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:minchalavinay579@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:8374577884" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+
+</html>
