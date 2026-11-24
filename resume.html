@@ -89,10 +89,38 @@
 
     /* Header */
     .resume-header {
-      text-align: center;
       border-bottom: 2px solid var(--primary);
       padding-bottom: 16px;
       margin-bottom: 20px;
+    }
+
+    .resume-header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .resume-header-info {
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .resume-photo-box {
+      width: 82px;
+      height: 96px;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .resume-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .name {
@@ -251,17 +279,24 @@
   <main class="resume-paper">
     <!-- Header -->
     <header class="resume-header">
-      <h1 class="name">MINCHALA VINAY KUMAR</h1>
-      <div class="contact-line">
-        <span>Chitvel, Andhra Pradesh</span> |
-        <span><a href="tel:8374577884">8374577884</a></span> |
-        <span><a href="mailto:minchalavinay579@gmail.com">minchalavinay579@gmail.com</a></span>
-      </div>
-      <div class="contact-line">
-        <span>LinkedIn: <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank"
-            rel="noopener">linkedin.com/in/minchalavinaykumar</a></span> |
-        <span>GitHub: <a href="https://github.com/minchalavinay" target="_blank"
-            rel="noopener">github.com/minchalavinay</a></span>
+      <div class="resume-header-flex">
+        <div class="resume-header-info">
+          <h1 class="name">MINCHALA VINAY KUMAR</h1>
+          <div class="contact-line">
+            <span>Chitvel, Andhra Pradesh</span> |
+            <span><a href="tel:8374577884">8374577884</a></span> |
+            <span><a href="mailto:minchalavinay579@gmail.com">minchalavinay579@gmail.com</a></span>
+          </div>
+          <div class="contact-line">
+            <span>LinkedIn: <a href="https://linkedin.com/in/minchalavinaykumar" target="_blank"
+                rel="noopener">linkedin.com/in/minchalavinaykumar</a></span> |
+            <span>GitHub: <a href="https://github.com/minchalavinay" target="_blank"
+                rel="noopener">github.com/minchalavinay</a></span>
+          </div>
+        </div>
+        <div class="resume-photo-box">
+          <img src="profile.jpg" alt="Minchala Vinay Kumar" class="resume-photo">
+        </div>
       </div>
     </header>
 
