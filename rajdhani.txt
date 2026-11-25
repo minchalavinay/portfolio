@@ -1,0 +1,55 @@
+================================================================================
+RAJDHANI ENTERPRISES - MULTI-BUSINESS COMMERCIAL & HOSPITALITY PORTAL
+Address: Near Ramnagar Bridge, Ram Nagar, Rajampet, Poli, Andhra Pradesh 516115
+Contact / WhatsApp: +91 8374577884
+================================================================================
+
+WEBSITE STRUCTURE (1 MAIN HUB + 5 SPECIALIZED BUSINESS VERTICALS):
+--------------------------------------------------------------------------------
+1. MAIN HUB PORTAL:
+   File: rajdhani/index.html
+   Theme: Luxury Corporate Navy & Regal Gold
+   Role: Umbrella portal showcasing all 5 businesses with unified navigation,
+         amenities, central location map, directions, and general inquiry form.
+
+2. HIVAS RESTAURANT:
+   File: rajdhani/restaurant.html
+   Theme: Culinary Crimson, Saffron & Sizzling Tandoor Amber
+   Role: Multi-cuisine AC family restaurant, Biryani specials, tandoori starters,
+         curries, South Indian meals, takeaway parcels & table reservation system.
+
+3. RAJDHANI SUPER MARKET:
+   File: rajdhani/supermarket.html
+   Theme: Fresh Harvest Emerald & Organic Mint Green
+   Role: Complete grocery supermarket, farm fresh produce, staples, dairy,
+         packaged foods, household needs & WhatsApp Grocery List Delivery order builder.
+
+4. PRIYA CAFE:
+   File: rajdhani/cafe.html
+   Theme: Roasted Espresso, Caramel & Warm Mocha Latte
+   Role: Cozy neighborhood youth & family hangout, artisan coffees, teas, burgers,
+         sandwiches, french fries, desserts, birthday celebration table bookings.
+
+5. HOTEL SKY GRAND INN:
+   File: rajdhani/hotel.html
+   Theme: Sapphire Sky Indigo, Executive Comfort & Platinum
+   Role: Luxury AC lodging, Deluxe King & Executive Twin rooms, Royal Family Suite,
+         24/7 room service from Hivas, Wi-Fi, generator backup, and room booking engine.
+
+6. RAJDHANI FUNCTION HALL:
+   File: rajdhani/function-hall.html
+   Theme: Imperial Celebration Purple, Velvet & Champagne Gold
+   Role: 600+ capacity grand AC celebration hall for Telugu weddings (Pelli),
+         receptions, engagements (Nischitartham), saree ceremonies, birthday galas,
+         separate 350+ dining hall, and Muhurtham date inquiry system.
+
+--------------------------------------------------------------------------------
+HOW TO VIEW & RUN LOCALLY:
+--------------------------------------------------------------------------------
+Simply double-click:
+C:\Users\hp\OneDrive\Desktop\webmaker\rajdhani\index.html
+in your browser (Google Chrome, Edge, etc.) to explore the entire website!
+
+All 6 pages are interconnected with seamless cross-navigation links, WhatsApp
+instant ordering & reservation systems, and responsive layouts for mobile and desktop.
+================================================================================
