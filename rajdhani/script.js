@@ -17,6 +17,13 @@ const RAJDHANI_CONFIG = {
   address: "Near Ramnagar Bridge, Ram Nagar, Rajampet, Poli, Andhra Pradesh 516115"
 };
 
+// Direct Contact for Hiva's Dine Inn (Multi Cuisine Restaurant)
+const HIVAS_CONFIG = {
+  phone: "+91 99498 48838",
+  whatsapp: "919949848838",
+  address: "2-164/B-1#B-2, Ramanagar, Rajampet, Kadapa dist., AP 516115"
+};
+
 /* --- Sticky Header & Scroll Effects --- */
 function initHeader() {
   const header = document.querySelector('.main-header');
@@ -99,17 +106,19 @@ function initWhatsAppForms() {
       const guests = document.getElementById('res-guests').value;
       const notes = document.getElementById('res-notes')?.value.trim() || 'None';
 
-      const msg = `*🍽️ TABLE RESERVATION - HIVAS RESTAURANT*\n\n` +
+      const msg = `*🍽️ TABLE RESERVATION - HIVA'S DINE INN*\n` +
+                  `*Multi Cuisine Restaurant (Rajampet)*\n\n` +
                   `*Guest Name:* ${name}\n` +
                   `*Phone:* ${phone}\n` +
                   `*Date:* ${date}\n` +
                   `*Time:* ${time}\n` +
                   `*Guests:* ${guests}\n` +
                   `*Special Request:* ${notes}\n\n` +
-                  `_Sent via Rajdhani Enterprises Website_`;
+                  `_Address: 2-164/B-1#B-2, Ramanagar, Rajampet_\n` +
+                  `_Sent via Hiva's Dine Inn Website_`;
 
-      dispatchWhatsApp(msg);
-      showToast('Redirecting to WhatsApp to confirm your table reservation!');
+      dispatchWhatsApp(msg, HIVAS_CONFIG.whatsapp);
+      showToast("Redirecting to WhatsApp to confirm your table at Hiva's Dine Inn!");
       restaurantForm.reset();
     });
   }
@@ -241,8 +250,9 @@ function initWhatsAppForms() {
 }
 
 // Quick WhatsApp Dispatch Helper
-function dispatchWhatsApp(encodedText) {
-  const url = `https://wa.me/${RAJDHANI_CONFIG.whatsapp}?text=${encodeURIComponent(encodedText)}`;
+function dispatchWhatsApp(encodedText, customNumber) {
+  const targetNumber = customNumber || RAJDHANI_CONFIG.whatsapp;
+  const url = `https://wa.me/${targetNumber}?text=${encodeURIComponent(encodedText)}`;
   window.open(url, '_blank');
 }
 
@@ -266,6 +276,10 @@ function showToast(text) {
 
 // Quick WhatsApp Order for individual catalog item
 window.orderItemOnWhatsApp = function(itemName, price, businessName) {
-  const msg = `Hello *${businessName}* (Rajdhani Enterprises),\nI am interested in ordering/inquiring about:\n*${itemName}* (${price})\nPlease share details and availability.\n\n_Address: Near Ramnagar Bridge, Rajampet_`;
-  dispatchWhatsApp(msg);
+  const isHivas = businessName.toLowerCase().includes("hiva");
+  const targetNumber = isHivas ? HIVAS_CONFIG.whatsapp : RAJDHANI_CONFIG.whatsapp;
+  const address = isHivas ? HIVAS_CONFIG.address : RAJDHANI_CONFIG.address;
+
+  const msg = `Hello *${businessName}*,\nI am interested in ordering / inquiring about:\n*${itemName}* (${price})\nPlease share details and availability.\n\n_Address: ${address}_`;
+  dispatchWhatsApp(msg, targetNumber);
 };

@@ -12,11 +12,13 @@ WEBSITE STRUCTURE (1 MAIN HUB + 5 SPECIALIZED BUSINESS VERTICALS):
    Role: Umbrella portal showcasing all 5 businesses with unified navigation,
          amenities, central location map, directions, and general inquiry form.
 
-2. HIVAS RESTAURANT:
+2. HIVA'S DINE INN (MULTI CUISINE RESTAURANT):
    File: rajdhani/restaurant.html
    Theme: Culinary Crimson, Saffron & Sizzling Tandoor Amber
+   Direct Phone / WhatsApp: +91 99498 48838
+   Address: 2-164/B-1#B-2, Ramanagar, Rajampet, Kadapa dist., AP 516115
    Role: Multi-cuisine AC family restaurant, Biryani specials, tandoori starters,
-         curries, South Indian meals, takeaway parcels & table reservation system.
+         curries, South Indian meals, takeaway parcels & direct WhatsApp reservation.
 
 3. RAJDHANI SUPER MARKET:
    File: rajdhani/supermarket.html
